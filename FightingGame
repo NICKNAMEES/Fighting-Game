@@ -1,0 +1,33 @@
+
+package javaapplication6;
+
+
+public class JavaApplication6 {
+
+   
+    public static void main(String[] args) {
+        int Playerhp = 100;
+        int Enemyhp = 100;
+        int lives = 1;
+        boolean ifplayerhitsenemy;
+        int moves;
+        
+        System.out.println("lives: "+lives+"\n"+"PlayerHealth: "+Playerhp+"\n"+"Enemy Health: "+Enemyhp);
+         int [] PlayerStats = new int[5];
+         int [] EnemyStats = new int[1];
+        PlayerStats [0] = 100;
+        EnemyStats [0] = 200;
+    
+    }
+public void Enemies (){
+    for(int i = 0; i < 100; i++){
+        int[i] Enemy = new enemy[100];
+    }
+}
+public static void FightingMoves () {
+}
+
+  }
+
+    
+

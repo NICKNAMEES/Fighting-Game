@@ -11,28 +11,26 @@ public class JavaApplication6 {
         int lives = 1;
         boolean ifplayerhitsenemy;
         int moves;
-        
+           Scanner keyBoard = new Scanner (System.in);
         System.out.println("lives: "+lives+"\n"+"PlayerHealth: "+Playerhp+"\n"+"Enemy Health: "+Enemyhp);
         System.out.println();
          int [] PlayerStats = new int[5];
          int [] EnemyStats = new int[1];
         PlayerStats [0] = 100;
         EnemyStats [0] = 200;
-       
-    System.out.println("Your fighting moves: ");
+    String space = " ";
+    System.out.println("Your Fighting Moves: "+FightingMoves[0] +space+FightingMoves[1]+space+ FightingMoves[2]+space+ FightingMoves[3]+space+ FightingMoves[4]+"");
     }
 public void Enemies (){
 }
 //Parallel array
-public String [] FightingMoves = { "punch", "kick", "stab", "slap", "push"
+public static String [] FightingMoves = { "punch", "kick", "stab", "slap", "push"
 };
 public int [] Damage = new int[5];
 public void DamageEnemy(){
 for(int i = 0; i <=5; i++);
-System.out.println("You did :"+FightingMoves );}
+}
+
 //get list to show up
+
   }
-
-
-    
-

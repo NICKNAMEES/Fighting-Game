@@ -12,14 +12,14 @@ public class JavaApplication6 {
         int tell;
         boolean ifplayerhitsenemy;
         int moves;
-           
+           int damage = damage = (int)(Math.random()*3);
          
         System.out.println("lives: "+lives+"\n"+"PlayerHealth: "+Playerhp+"\n"+"Enemy Health: "+Enemyhp);
         System.out.println();
          int [] PlayerStats = new int[5];
          int [] EnemyStats = new int[1];
          int Text;
-         int damage = 1;
+    
         PlayerStats [0] = 100;
         EnemyStats [0] = 200;
     String space = " ";
@@ -28,24 +28,36 @@ public class JavaApplication6 {
     System.out.println("You have 5 moves can you choose the right ones and destroy your enemy before it destroys you!");
    
       String text = keyBoard.nextLine();    
-      if(text=="punch"){
-      System.out.println(FightingMoves[1]);
-       System.out.println("You punched enemy with"+space+damage+"damage");}
-
-        
-    
-         String prompt = keyBoard.nextLine(); 
-         if(text == "kick"){
-         System.out.println(FightingMoves[2]);}
-         System.out.println("You kicked the Enemy!");
+      if(text.equals("punch")){
+     System.out.println("Chosen Move: "+FightingMoves[0]);
+       System.out.println("You punched enemy with"+" "+damage+" "+"damage");}
+     text= keyBoard.nextLine();
+      if(text.equals("kick")){
+     System.out.println("Chosen Move: "+FightingMoves[1]);
+       System.out.println("You kicked enemy with"+" "+damage+" "+"damage");}
+      text = keyBoard.nextLine();
+      if(text.equals("stab")){
+     System.out.println("Chosen Move: "+FightingMoves[2]);
+       System.out.println("You stabbed enemy with"+" "+damage+" "+"damage");}
+        text = keyBoard.nextLine();
+        if(text.equals("slap")){
+     System.out.println("Chosen Move: "+FightingMoves[3]);
+       System.out.println("You slapped enemy with"+" "+damage+" "+"damage");}
+        text = keyBoard.nextLine();
+        if(text.equals("push")){
+     System.out.println("Chosen Move: "+FightingMoves[4]);
+       System.out.println("You pushed enemy with"+" "+damage+" "+"damage");}
     }
+  
+    
     //promt from chatbox
 //Parallel array
 public static String [] FightingMoves = { "punch", "kick", "stab", "slap", "push"
 };
-public int [] Damage = new int[5];
+
 public void DamageEnemy(){
-int damage;
+    int damage;
+damage = (int)(Math.random()*3)-1;
 }
 public void punch (){
     

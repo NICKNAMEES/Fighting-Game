@@ -1,6 +1,6 @@
 
 package javaapplication6;
-
+import java.util.Scanner;
 
 public class JavaApplication6 {
 
@@ -9,28 +9,46 @@ public class JavaApplication6 {
         int Playerhp = 100;
         int Enemyhp = 200;
         int lives = 1;
+        int tell;
         boolean ifplayerhitsenemy;
         int moves;
-           Scanner keyBoard = new Scanner (System.in);
+           
+         
         System.out.println("lives: "+lives+"\n"+"PlayerHealth: "+Playerhp+"\n"+"Enemy Health: "+Enemyhp);
         System.out.println();
          int [] PlayerStats = new int[5];
          int [] EnemyStats = new int[1];
+         int Text;
+         int damage = 1;
         PlayerStats [0] = 100;
         EnemyStats [0] = 200;
     String space = " ";
+    Scanner keyBoard = new Scanner (System.in);
     System.out.println("Your Fighting Moves: "+FightingMoves[0] +space+FightingMoves[1]+space+ FightingMoves[2]+space+ FightingMoves[3]+space+ FightingMoves[4]+"");
+    System.out.println("You have 5 moves can you choose the right ones and destroy your enemy before it destroys you!");
+   
+      String text = keyBoard.nextLine();    
+      if(text=="punch"){
+      System.out.println(FightingMoves[1]);
+       System.out.println("You punched enemy with"+space+damage+"damage");}
+
+        
+    
+         String prompt = keyBoard.nextLine(); 
+         if(text == "kick"){
+         System.out.println(FightingMoves[2]);}
+         System.out.println("You kicked the Enemy!");
     }
-public void Enemies (){
-}
+    //promt from chatbox
 //Parallel array
 public static String [] FightingMoves = { "punch", "kick", "stab", "slap", "push"
 };
 public int [] Damage = new int[5];
 public void DamageEnemy(){
-for(int i = 0; i <=5; i++);
+int damage;
+}
+public void punch (){
+    
+}
 }
 
-//get list to show up
-
-  }
